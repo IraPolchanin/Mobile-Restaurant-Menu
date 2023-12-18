@@ -294,3 +294,11 @@ input::placeholder {
   font-size: 32px;
   line-height: 16.8px;
 }
+@media (max-width:460px) {
+  .order__item-details_price {
+    min-width: unset;
+  }
+  .checkout__title{
+    margin-bottom: 12px;
+  }
+}
