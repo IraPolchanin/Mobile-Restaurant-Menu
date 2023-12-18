@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./images/restaurantLogo.jpeg" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;700&family=Smythe&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./index.css">
+  <title>Mobile Restaurant Menu</title>
+  <script type="module" src="./index.js" defer></script>
+</head>
+
+<body class="page" id="page">
+  <header class="header">
+    <div class="wrapper">
+      <h1 class="header__title">Jimmy’s Diner</h1>
+      <h3 class="header__subtitle">The best burgers and pizzas in town.</h3>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrapper">
+      <section class="menu" id="menu"></section>
+      <section class="checkout" id="checkout"></section>
+    </div>
+  </main>
+
+  <div class="modal__wrapper" id="modal">
+    <div class="modal">
+      <div class="close-modal-btn-container" id="modal-close-btn">
+        <button class="modal-close-btn">X</button>
+      </div>
+      <div class="modal-inner" id="modal-inner">
+        <h2 class="modal__title">Enter card details</h2>
+        <form class="pay-form" id="pay-form">
+          <input type="text" name="name" id="username" placeholder="Enter your name" required />
+          <input type="text" name="card-number" id="cardnumber" placeholder="Enter card number" pattern="[0-9]{16}" minlength="16"
+            maxlength="16" required />
+          <input type="text" name="card-cvv" id="cardcvv" pattern="[0-9]{3}" placeholder="Enter CVV" minlength="3"
+            maxlength="3" required />
+          <button type="submit" class="modal-btn">Pay</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
