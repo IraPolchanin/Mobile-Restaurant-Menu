@@ -131,7 +131,7 @@ function getMenuHtml() {
           <span class="menu__item-pic">${menuItem.emoji}</span>
           <div class="menu__item-content">
             <p class="menu__item-title">${menuItem.name}</p>
-            <p class="menu__item-ingredients">${menuItem.ingredients}</p>
+            <p class="menu__item-ingredients">${menuItem.ingredients.join(', ')}</p>
             <p class="menu__item-price">&dollar;${menuItem.price}</p>
           </div>
           <button class="menu__item-btn" id=${menuItem.name} data-price=${menuItem.price}>+</button>
